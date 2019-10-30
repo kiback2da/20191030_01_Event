@@ -68,5 +68,13 @@ class MainActivity : AppCompatActivity() {
             in intList -> Log.d("로그","a가 intList에 포함")
             !in intList -> Log.d("로그","a가 intList에 미포함")
         }
+
+        for(name in stringList){
+            Log.d("로그",name)
+        }
+
+        for(i in 0..5){
+            Log.d("로그","$i")
+        }
     }
 }
