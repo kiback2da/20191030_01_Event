@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:orientation="vertical"
     android:padding="10dp">
 
     <!-- padding이나 margin을 그냥 쓰게되면 사방에 균등하게 적용됨 -->
@@ -15,6 +16,11 @@
         android:id="@+id/firstTextView"
         android:text="초기 값"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_marginTop="5dp"
+        android:id="@+id/okBtn"/>
 
 </LinearLayout>
