@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp">
 
-  
+    <!-- padding이나 margin을 그냥 쓰게되면 사방에 균등하게 적용됨 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstTextView"
+        android:text="초기 값"/>
+
+
 
 </LinearLayout>
