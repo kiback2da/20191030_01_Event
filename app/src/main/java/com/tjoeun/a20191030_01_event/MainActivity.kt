@@ -3,6 +3,7 @@ package com.tjoeun.a20191030_01_event
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,13 @@ class MainActivity : AppCompatActivity() {
         firstTextView.text = "실행 후"
         okBtn.setOnClickListener {
             firstTextView.text = "확인버튼 클릭됨"
+
+            var inputId = loginIdEdt.text.toString()
+            resultTxt.text = inputId
+
+            Log.d("로그",inputId)
+
+            Toast.makeText(this,inputId,Toast.LENGTH_SHORT).show()
         }
 
         okBtn.setOnLongClickListener {

@@ -16,6 +16,20 @@
         android:id="@+id/firstTextView"
         android:text="초기 값"/>
 
+    <EditText
+        android:id="@+id/loginIdEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="아이디를 입력하고 확인버튼을 누르세요"
+        android:gravity="center" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
