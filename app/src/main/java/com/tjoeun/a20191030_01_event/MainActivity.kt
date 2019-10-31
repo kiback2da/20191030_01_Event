@@ -23,7 +23,10 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("로그",inputId)
 
-            Toast.makeText(this,inputId,Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,inputId,Toast.LENGTH_SHORT).show()
+            val printStr = "ID is ${inputId.toLowerCase()} and there is no password"
+
+            Toast.makeText(this,printStr,Toast.LENGTH_SHORT).show()
         }
 
         okBtn.setOnLongClickListener {
